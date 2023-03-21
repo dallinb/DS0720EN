@@ -5,4 +5,4 @@ Data Science and Machine Learning Capstone Project
 
 | Notebook Name | Hands-on Lab Title |
 | ------------  | ------------------ |
-| jupyter-labs-spacex-data-collection-api.ipynb | Complete the Data Collection API Lab |
+| [jupyter-labs-spacex-data-collection-api.ipynb](jupyter-labs-spacex-data-collection-api.ipynb) | Complete the Data Collection API Lab |
