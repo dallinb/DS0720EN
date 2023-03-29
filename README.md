@@ -9,3 +9,4 @@ Data Science and Machine Learning Capstone Project
 | [jupyter-labs-webscraping.ipynb](jupyter-labs-webscraping.ipynb) | Complete the Data Collection with Web Scraping |
 | [Data_Wrangling.ipynb](Data_Wrangling.ipynb) | Complete the EDA lab |
 | [jupyter-labs-eda-sql-edx_sqllite.ipynb](jupyter-labs-eda-sql-edx_sqllite.ipynb) | Complete the EDA with SQL(lite) |
+| [Complete_the_EDA_with_Visualization.ipynb](Complete_the_EDA_with_Visualization.ipynb) | Complete the EDA with Visualisations |
