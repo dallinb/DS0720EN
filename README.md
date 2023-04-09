@@ -12,3 +12,4 @@ Data Science and Machine Learning Capstone Project
 | [Complete_the_EDA_with_Visualization.ipynb](Complete_the_EDA_with_Visualization.ipynb) | Complete the EDA with Visualisations |
 | [launch_site_location.jupyterlite.ipynb](launch_site_location.jupyterlite.ipynb) | Interactive Visual Analytics with Folium lab |
 | [spacex_dash_app.py](spacex_dash_app.py) | Build an Interactive Dashboard with Ploty Dash |
+| [SpaceX_Machine_Learning_Prediction_Part_5.ipynb](SpaceX_Machine_Learning_Prediction_Part_5.ipynb) | Complete the Machine Learning Prediction lab |
