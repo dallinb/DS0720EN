@@ -11,3 +11,4 @@ Data Science and Machine Learning Capstone Project
 | [jupyter-labs-eda-sql-edx_sqllite.ipynb](jupyter-labs-eda-sql-edx_sqllite.ipynb) | Complete the EDA with SQL(lite) |
 | [Complete_the_EDA_with_Visualization.ipynb](Complete_the_EDA_with_Visualization.ipynb) | Complete the EDA with Visualisations |
 | [launch_site_location.jupyterlite.ipynb](launch_site_location.jupyterlite.ipynb) | Interactive Visual Analytics with Folium lab |
+| [spacex_dash_app.py](spacex_dash_app.py) | Build an Interactive Dashboard with Ploty Dash |
