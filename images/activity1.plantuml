@@ -1,0 +1,25 @@
+@startuml
+!theme spacelab
+start
+:Access https://api.spacexdata.com/v4/launches/past;
+note right
+In reality a static dataset
+was subsequenlty downloaded.
+end note
+:Normalize the Dataset;
+:Reduce the Dataset;
+fork
+  :getBoosterVersion(data);
+fork again
+  :getLaunchSite(data);
+fork again
+  :getPayloadData(data);
+fork again
+  :getCoreData(data);
+end fork
+:Create launch_dict;
+:Create Dataframe from launch_dict;
+:Reduce Dataframe to only Falcon 9;
+:Replace Missing Payload Mass (mean);
+stop
+@enduml
