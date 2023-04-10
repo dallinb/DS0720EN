@@ -1,0 +1,15 @@
+@startuml
+!theme vibrant
+start
+note
+Data loaded into Pandas
+dataframe.
+end note
+:Calculate the number of launches on each site;
+:Calculate the number and occurrence of each orbit;
+partition classification {
+  :Calculate the number and occurence of mission outcome per orbit type;
+  :Create a landing outcome label from Outcome column;
+}
+stop
+@enduml

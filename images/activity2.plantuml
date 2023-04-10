@@ -1,0 +1,26 @@
+@startuml
+!theme vibrant
+start
+:Extract Wikipedia Page;
+note right
+To keep data consistent,
+the version of the
+Wikipedia page was pinned
+to 2021-06-09.
+end note
+:Extract Tables from HTML;
+repeat
+  partition launch_dict {
+    :Get Launch Details;
+  }
+  note right
+    Get the flight number, lauch date and time,
+    booster version, launch site, payload,
+    destination orbit, customer, launch outcome
+    and booster landing.
+  end note
+repeat while (another row in table?) is (yes)
+->no;
+:Convert launch_dict to Dataframe;
+stop
+@enduml
