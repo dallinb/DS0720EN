@@ -1,0 +1,24 @@
+@startuml
+!theme vibrant
+start
+note
+Data loaded into Pandas
+dataframe as data.
+end note
+:Create the X data set from the URL provided;
+:Create Y from the Class column of data;
+:Standardize the data in X;
+:Split X and Y into test and train data;
+fork
+  :Logistic Regression (LR);
+fork again
+  :Support Vector Machine (SVM);
+fork again
+  :Decision Tree Classifier;
+fork again
+  :K-Nearest Neighbors (KNN);
+end fork
+:Assess the Best Model
+Based on Accuracy;
+stop
+@enduml

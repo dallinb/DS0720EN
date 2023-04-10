@@ -62,8 +62,8 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
 def get_pie_chart(entered_site):
     filtered_df = spacex_df
     if entered_site == 'ALL':
-        fig = px.pie(filtered_df, values='class', 
-        names='Launch Site', 
+        fig = px.pie(filtered_df, values='class',
+        names='Launch Site',
         title='Success Count for all launch sites')
         return fig
     else:
@@ -71,7 +71,7 @@ def get_pie_chart(entered_site):
         filtered_df=spacex_df[spacex_df['Launch Site']== entered_site]
         filtered_df=filtered_df.groupby(['Launch Site','class']).size().reset_index(name='class count')
         fig=px.pie(filtered_df,values='class count',names='class',title=f"Total Success Launches for site {entered_site}")
-        return fig      
+        return fig
 # TASK 4:
 # Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
 @app.callback(Output(component_id='success-payload-scatter-chart',component_property='figure'),
@@ -80,7 +80,7 @@ def get_pie_chart(entered_site):
 def scatter(entered_site,payload):
     filtered_df = spacex_df[spacex_df['Payload Mass (kg)'].between(payload[0],payload[1])]
     # thought reusing filtered_df may cause issues, but tried it out of curiosity and it seems to be working fine
-    
+
     if entered_site=='ALL':
         fig=px.scatter(filtered_df,x='Payload Mass (kg)',y='class',color='Booster Version Category',title='Success count on Payload mass for all sites')
         return fig
@@ -91,4 +91,3 @@ def scatter(entered_site,payload):
 # Run the app
 if __name__ == '__main__':
     app.run_server()
-
